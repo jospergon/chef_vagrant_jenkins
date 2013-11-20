@@ -1,5 +1,5 @@
 name "jenkins"
 
 run_list(
-  "recipe[apt]"
+  "recipe[jenkins::server]"
 )

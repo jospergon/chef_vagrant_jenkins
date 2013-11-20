@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   config.berkshelf.enabled = true
+  config.vm.provision :shell, inline: "gem install chef --version 11.4.2 --no-rdoc --no-ri --conservative"
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "precise64"
